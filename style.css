@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
+html {
+  overflow-y: scroll;
+}
+
 html,
 body {
   background-color: #fefefe !important;

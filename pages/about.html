@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
         type="text/css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" media="all" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" media="all" href="/assets/favicon.ico" type="image/x-icon">
     <title> About | Catty</title>
 </head>
 
 <body class="bg-light ">
-    <nav class="navbar navbar-expand-md navbar-dark bg-info px-5">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-md navbar-dark bg-warning px-5">
+        <a class="navbar-brand" href="../index.html">
             <i class="fas fa-paw""></i>
             <span>
                 Catty
@@ -30,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="cats.html">Cats</a>
@@ -46,27 +46,66 @@
     </nav>
 
 
-    <section id="about" class="container mx-auto mt-5">
+    <section id="about" class="container mx-auto my-5">
         <div class="row">
             <div class="col-sm-8">
-                <h1>About Catty</h1><br>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <h1 class="mb-4">About us</h1>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</h4><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    aliquip ex ea commodo consequat.</h5><br>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
                     officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <br><button class="btn btn-block bg-dark text-light btn-lg">Get in Touch</button>
+                <br>
+                <button class="btn btn-block bg-dark btn-lg">
+                    <a href="contact.html" style="text-decoration:none">
+                        <span class="text-light">
+                            Get in Touch
+                        </span>
+                    </a>
+                </button>
+
             </div>
-            <div class="col-sm-4">
-                <i class="fas fa-paw"></i>
+            <div class="col-sm-4 m-auto text-center">
+                <i class="fas fa-paw fa-10x"></i>
             </div>
         </div>
     </section>
 
+
+    <div class="container-fluid bg-grey pt-5">
+        <div class="row">
+            <div class="col-sm-4  m-auto text-center">
+                <i class="fas fa-globe-asia fa-10x"></i>
+            </div>
+            <div class="col-sm-8">
+                <h2>Our Values</h2><br>
+                <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+                <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer mt-5">
+        <div class="d-flex justify-content-center align-items-center mx-auto" style="background-color:#f0f0f0;">
+            <p class="text-center my-auto py-4 text-secondary">
+                Copyright © 2021 Catty
+            </p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
