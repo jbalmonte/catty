@@ -5,270 +5,771 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" media="all" href="/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
         type="text/css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" media="all" href="assets/favicon.ico" type="image/x-icon">
-    <title> Catty</title>
+
+    <title> Catty </title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+        html {
+            overflow-y: scroll;
+        }
+
+        html,
+        body {
+            background-color: #fefefe !important;
+        }
+
+        nav>a {
+            font-family: "Abril Fatface", cursive !important;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .home-testimonial {
+            background-color: #231834;
+            height: 380px;
+        }
+
+        .home-testimonial-bottom {
+            background-color: #f8f8f8;
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            position: relative;
+            height: 130px;
+            top: 190px;
+        }
+
+        .home-testimonial h3 {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .home-testimonial h2 {
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .testimonial-inner {
+            position: relative;
+            top: -174px;
+        }
+
+        .testimonial-pos {
+            position: relative;
+            top: 24px;
+        }
+
+        .testimonial-inner .tour-desc {
+            border-radius: 5px;
+            padding: 40px;
+        }
+
+        .color-grey-3 {
+            font-family: "Montserrat", Sans-serif;
+            font-size: 14px;
+            color: #6c83a2;
+        }
+
+        .testimonial-inner img.tm-people {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            max-width: none;
+        }
+
+        .link-name {
+            font-family: "Montserrat", Sans-serif;
+            font-size: 14px;
+            color: #6c83a2;
+        }
+
+        .link-position {
+            font-family: "Montserrat", Sans-serif;
+            font-size: 12px;
+            color: #6c83a2;
+        }
+
+        #testimonial {
+            height: 90vh;
+        }
+
+        #faq {
+            background-color: #231834;
+        }
+    </style>
 </head>
 
 <body class="bg-light">
+
     <nav class="navbar navbar-expand-md navbar-dark bg-warning px-5">
-        <a class="navbar-brand" href="#">
-            <i class="fas fa-paw""></i>
+        <a class="navbar-brand" href="">
+            <i class="fas fa-paw"></i>
             <span>
                 Catty
             </span>
         </a>
         <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/cats.html">Cats</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active Home">
+                    <a class="btn nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item Cats">
+                    <a class="nav-link">
+                        Cats
+                    </a>
+                </li>
+                <li class="nav-item About">
+                    <a class="nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item Contact">
+                    <a class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <section class="container py-5 my-auto" style="height: 100vh;">
-        <div class="row">
-            <div class="col-6 my-auto">
-                <h1 class="mb-3 font-weight-bold">Cat Adoption</h1>
-                <p class="text-secondary mb-4">Have you always wished for a pet of your own?
-                    Today is your chance to adopt one of our stray cats.</p>
-                <a href="pages/cats.html">
-                    <button class="btn btn-warning">Adopt Now!</button>
-                </a>
-            </div>
-            <div class="col-6">
-                <img src="assets/cat.jpg" alt="cat" class="rounded float-right" style="height: 500px;">
 
-            </div>
-        </div>
-    </section>
+    <div id="Home">
+        <section class="container py-5 my-auto" style="height: 100vh;">
+            <div class="row">
+                <div class="col-6 my-auto">
+                    <h1 class="mb-3 font-weight-bold">Cat Adoption</h1>
+                    <p class="text-secondary mb-4">Have you always wished for a pet of your own?
+                        Today is your chance to adopt one of our stray cats.</p>
 
-    <section class="container-fluid text-light " id="faq">
-        <div class="container py-5">
-            <div class="col-6 mb-5">
-                <h2 class="mb-4 font-weight-bold">
-                    <em>
-                        Cats in the Philippines
-                    </em>
-                </h2>
-                <p style="color:#b8b8b8">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet libero optio suscipit fuga, mollitia
-                    voluptatem aliquid quo omnis dolorum impedit nam officiis! Accusantium ad itaque aspernatur saepe
-                    nulla
-                    voluptate a reiciendis quibusdam numquam asperiores labore eum iste corporis provident ab facilis,
-                    repudiandae consequatur, eaque atque, harum quia ipsum id quaerat excepturi? Qui dolor nihil iure
-                    aperiam sunt harum animi et illo beatae quam eos veniam distinctio, unde eum eius nobis?
-                </p>
-            </div>
+                    <button class="btn btn-warning" onclick="goToView('Cats')">Adopt Now!</button>
 
-            <div class="col-6 ml-auto mb-auto">
-                <h2 class="mb-4 font-weight-bold">
-                    <em>
-                        Why you should adopt a cat?
-                    </em>
-                </h2>
-                <p style="color:#b8b8b8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores natus, exercitationem esse libero,
-                    atque soluta a, cumque excepturi adipisci omnis autem ipsum molestias! Quod voluptas facere sequi
-                    itaque deleniti illum cum dolorem veniam, veritatis incidunt blanditiis ipsum ullam hic odio beatae
-                    provident quasi quos esse, quae maxime, doloremque magni repellat repellendus. Iure praesentium, cum
-                    voluptas fugit alias maiores voluptates eveniet ullam tenetur ex ipsam, sit molestiae voluptate
-                    doloremque necessitatibus. Fuga, molestias natus excepturi sapiente voluptas nobis sint doloribus
-                    hic architecto.
-                </p>
-            </div>
+                </div>
+                <div class="col-6">
+                    <img src="https://i.pinimg.com/564x/f5/59/31/f55931d7495f643979b9bbede9feaca2.jpg" alt="cat"
+                        class="rounded float-right" style="height: 500px;">
 
-            <div class="col-6">
-                <h2 class="mb-4 font-weight-bold">
-                    <em>
-                        How can I adopt a cat?
-                    </em>
-                </h2>
-                <p style="color:#b8b8b8">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur dolorum quas
-                    sapiente exercitationem eaque voluptas ea distinctio quia inventore maxime iusto natus praesentium
-                    soluta tempore rerum quos ratione eum, optio magni sint blanditiis sunt. Maxime, temporibus nostrum
-                    alias qui voluptatum architecto tenetur quaerat, perspiciatis odit facilis aspernatur praesentium
-                    repellendus iste! Laudantium velit accusamus eum soluta, consectetur vel aliquam! Veritatis, nulla.
-                    Quos atque, velit voluptate praesentium quo ab vitae deleniti laudantium eligendi quis, libero
-                    fugiat incidunt alias, porro repudiandae perferendis! Officia ducimus saepe omnis rerum aut quae
-                    nisi distinctio voluptas!
-                </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container bg-light py-5">
-        <h1 class="text-center mb-4 font-weight-bold">Our Cats</h1>
-        <div class="row">
-            <div class="col-4 mb-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://cataas.com/cat?width=200&height=199" alt="image"
-                        style="width:100%; height:200px">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing.
-                        </p>
+        <section class="container-fluid text-light " id="faq">
+            <div class="container py-5">
+                <div class="col-6 mb-5">
+                    <h2 class="mb-4 font-weight-bold">
+                        <em>
+                            Cats in the Philippines
+                        </em>
+                    </h2>
+                    <p style="color:#b8b8b8">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet libero optio suscipit fuga,
+                        mollitia
+                        voluptatem aliquid quo omnis dolorum impedit nam officiis! Accusantium ad itaque aspernatur
+                        saepe
+                        nulla
+                        voluptate a reiciendis quibusdam numquam asperiores labore eum iste corporis provident ab
+                        facilis,
+                        repudiandae consequatur, eaque atque, harum quia ipsum id quaerat excepturi? Qui dolor nihil
+                        iure
+                        aperiam sunt harum animi et illo beatae quam eos veniam distinctio, unde eum eius nobis?
+                    </p>
+                </div>
+
+                <div class="col-6 ml-auto mb-auto">
+                    <h2 class="mb-4 font-weight-bold">
+                        <em>
+                            Why you should adopt a cat?
+                        </em>
+                    </h2>
+                    <p style="color:#b8b8b8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores natus, exercitationem esse
+                        libero,
+                        atque soluta a, cumque excepturi adipisci omnis autem ipsum molestias! Quod voluptas facere
+                        sequi
+                        itaque deleniti illum cum dolorem veniam, veritatis incidunt blanditiis ipsum ullam hic odio
+                        beatae
+                        provident quasi quos esse, quae maxime, doloremque magni repellat repellendus. Iure praesentium,
+                        cum
+                        voluptas fugit alias maiores voluptates eveniet ullam tenetur ex ipsam, sit molestiae voluptate
+                        doloremque necessitatibus. Fuga, molestias natus excepturi sapiente voluptas nobis sint
+                        doloribus
+                        hic architecto.
+                    </p>
+                </div>
+
+                <div class="col-6">
+                    <h2 class="mb-4 font-weight-bold">
+                        <em>
+                            How can I adopt a cat?
+                        </em>
+                    </h2>
+                    <p style="color:#b8b8b8">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur dolorum quas
+                        sapiente exercitationem eaque voluptas ea distinctio quia inventore maxime iusto natus
+                        praesentium
+                        soluta tempore rerum quos ratione eum, optio magni sint blanditiis sunt. Maxime, temporibus
+                        nostrum
+                        alias qui voluptatum architecto tenetur quaerat, perspiciatis odit facilis aspernatur
+                        praesentium
+                        repellendus iste! Laudantium velit accusamus eum soluta, consectetur vel aliquam! Veritatis,
+                        nulla.
+                        Quos atque, velit voluptate praesentium quo ab vitae deleniti laudantium eligendi quis, libero
+                        fugiat incidunt alias, porro repudiandae perferendis! Officia ducimus saepe omnis rerum aut quae
+                        nisi distinctio voluptas!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container bg-light py-5">
+            <h1 class="text-center mb-4 font-weight-bold">Our Cats</h1>
+            <div class="row">
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=199" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=201" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem; ">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=202" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://cataas.com/cat?width=200&height=201" alt="image"
-                        style="width:100%; height:200px">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 mb-3">
-                <div class="card" style="width: 18rem; ">
-                    <img class="card-img-top" src="https://cataas.com/cat?width=200&height=202" alt="image"
-                        style="width:100%; height:200px">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-4 mb-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://cataas.com/cat?width=200&height=203" alt="image"
-                        style="width:100%; height:200px">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </p>
+            <div class="row">
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=203" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=204" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=205" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://cataas.com/cat?width=200&height=204" alt="image"
-                        style="width:100%; height:200px">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </p>
-                    </div>
-                </div>
+
+            <div class="col text-center">
+                <button class="text-center btn btn-warning mx-auto" onclick="goToView('Cats')">See
+                    more</button>
             </div>
-            <div class="col-4 mb-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://cataas.com/cat?width=200&height=205" alt="image"
-                        style="width:100%; height:200px">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="col text-center">
-            <a href="cats.html">
-                <button class="text-center btn btn-warning mx-auto">See more</button>
-            </a>
-        </div>
+        </section>
 
-    </section>
-
-    <section id="testimonial">
-        <div class="home-testimonial">
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center testimonial-pos">
-                    <div class="col-md-12 pt-4 d-flex text-warning justify-content-center">
-                        <h3>Testimonials</h3>
+        <section id="testimonial">
+            <div class="home-testimonial">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center testimonial-pos">
+                        <div class="col-md-12 pt-4 d-flex text-warning justify-content-center">
+                            <h3>Testimonials</h3>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center">
+                            <h2>Explore the people experience</h2>
+                        </div>
                     </div>
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <h2>Explore the people experience</h2>
-                    </div>
-                </div>
-                <section class="home-testimonial-bottom">
-                    <div class="container testimonial-inner">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-md-4 style-3">
-                                <div class="tour-item ">
-                                    <div class="tour-desc bg-white">
-                                        <div class="tour-text color-grey-3 text-center">“
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa nisi omnis
-                                            adipisci! Incidunt, ullam exercitationem necessitatibus neque minus magnam.
-                                            ”</div>
-                                        <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
-                                                src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg"
-                                                alt=""></div>
-                                        <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                        <div class="link-position d-flex justify-content-center">Parent</div>
+                    <section class="home-testimonial-bottom">
+                        <div class="container testimonial-inner">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-4 style-3">
+                                    <div class="tour-item ">
+                                        <div class="tour-desc bg-white">
+                                            <div class="tour-text color-grey-3 text-center">“
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa nisi
+                                                omnis
+                                                adipisci! Incidunt, ullam exercitationem necessitatibus neque minus
+                                                magnam.
+                                                ”</div>
+                                            <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
+                                                    src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg"
+                                                    alt=""></div>
+                                            <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
+                                            <div class="link-position d-flex justify-content-center">Parent</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 style-3">
+                                    <div class="tour-item ">
+                                        <div class="tour-desc bg-white">
+                                            <div class="tour-text color-grey-3 text-center">“
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+                                                voluptatibus quidem ullam officia quisquam incidunt ipsum eius ducimus
+                                                reiciendis? ”</div>
+                                            <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
+                                                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                                    alt=""></div>
+                                            <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
+                                            <div class="link-position d-flex justify-content-center">Parent</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 style-3">
+                                    <div class="tour-item ">
+                                        <div class="tour-desc bg-white">
+                                            <div class="tour-text color-grey-3 text-center">“
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+                                                exercitationem
+                                                optio iure vitae, nihil quis aspernatur maiores. Labore excepturi sed
+                                                fuga.
+                                                ”</div>
+                                            <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
+                                                    src="https://images.pexels.com/photos/4946604/pexels-photo-4946604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                                    alt=""></div>
+                                            <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
+                                            <div class="link-position d-flex justify-content-center">Parent</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 style-3">
-                                <div class="tour-item ">
-                                    <div class="tour-desc bg-white">
-                                        <div class="tour-text color-grey-3 text-center">“
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
-                                            voluptatibus quidem ullam officia quisquam incidunt ipsum eius ducimus
-                                            reiciendis? ”</div>
-                                        <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
-                                                src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                alt=""></div>
-                                        <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                        <div class="link-position d-flex justify-content-center">Parent</div>
-                                    </div>
-                                </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <div id="Cats" style="display: none;">
+        <section class="container bg-light py-5">
+            <h1 class="text-center mb-4 font-weight-bold">Our Cats</h1>
+            <div class="row">
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=199" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=201" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=202" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem; ">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=203" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=204" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=205" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=206" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=207" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=208" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=209" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=210" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=211" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=212" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=213" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=214" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=215" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=216" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=217" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=219" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mb-3">
+                    <div class="card" style="width: 17rem;">
+                        <img class="card-img-top" src="https://cataas.com/cat?width=200&height=220" alt="image"
+                            style="width:100%; height:200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+    <div id="About" style="display: none;">
+        <section id="about" class="container mx-auto my-5">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1 class="mb-4">About us</h1>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.</h5><br>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui
+                        officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <br>
+                    <button class="btn btn-block bg-dark btn-lg">
+                        <a href="contact.html" style="text-decoration:none">
+                            <span class="text-light">
+                                Get in Touch
+                            </span>
+                        </a>
+                    </button>
+
+                </div>
+                <div class="col-sm-4 m-auto text-center">
+                    <i class="fas fa-paw fa-10x"></i>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container-fluid bg-grey py-5">
+            <div class="row">
+                <div class="col-sm-4  m-auto text-center">
+                    <i class="fas fa-globe-asia fa-10x"></i>
+                </div>
+                <div class="col-sm-8">
+                    <h2>Our Values</h2><br>
+                    <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+                    <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="Contact" style="display: none;">
+        <section class="container-fluid py-5 mt-5" style="background-color: #f0f0f0;">
+            <div id=" contact" class="container d-flex justify-content-center flex-column">
+                <h2 class="text-center">CONTACT</h2>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>Contact us and we'll get back to you within 24 hours.</p>
+                        <p> <i class="fas fa-map-marker-alt"></i> Manila, Philippines</p>
+                        <p><i class="fas fa-mobile-alt"></i> +63 9515151515</p>
+                        <p> <i class="fas fa-envelope"></i> elijah@email.com</p>
+                    </div>
+                    <div class="col-sm-7 ">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                                    required>
                             </div>
-                            <div class="col-md-4 style-3">
-                                <div class="tour-item ">
-                                    <div class="tour-desc bg-white">
-                                        <div class="tour-text color-grey-3 text-center">“
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In exercitationem
-                                            optio iure vitae, nihil quis aspernatur maiores. Labore excepturi sed fuga.
-                                            ”</div>
-                                        <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
-                                                src="https://images.pexels.com/photos/4946604/pexels-photo-4946604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                alt=""></div>
-                                        <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                        <div class="link-position d-flex justify-content-center">Parent</div>
-                                    </div>
-                                </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                    required>
                             </div>
                         </div>
-                </section>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                            rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-info float-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
+
 
     <footer class="footer">
         <div class="d-flex justify-content-center align-items-center mx-auto" style="background-color:#f0f0f0;">
@@ -277,6 +778,31 @@
             </p>
         </div>
     </footer>
+
+
+    <script>
+        const views = ['Home', 'Cats', 'About', 'Contact']
+
+        function goToView(view) {
+            window.scrollTo(0, 0)
+            views.forEach(v => {
+
+                if (v === view) document.title = `Catty${(v === 'Home') ? '' : ` | ${v}`}`;
+
+                document.querySelector(`#${v}`).style.display = v === view ? 'block' : 'none'
+            });
+
+            document.querySelector('.fixed-bottom')?.classList.remove('fixed-bottom')
+            document.querySelectorAll('.active').forEach(v => v.classList.remove('active'))
+
+            if (view === 'Contact') document.querySelector('footer').classList.add('fixed-bottom')
+            document.querySelector(`.${view}`).classList.add('active')
+        }
+
+        document.querySelectorAll('.nav-link')
+            .forEach(v => v.addEventListener('click', e => goToView(e.target.textContent.trim())))
+
+    </script>
 
     <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
